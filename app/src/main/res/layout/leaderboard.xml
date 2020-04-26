@@ -20,10 +20,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/leaderboardData"
-        android:layout_width="409dp"
-        android:layout_height="649dp"
+        android:layout_width="469dp"
+        android:layout_height="904dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/leaderboardText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

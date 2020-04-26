@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="460dp"
+        android:layout_height="989dp"
+        android:background="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/firre" />
+
     <Button
         android:id="@+id/playButton"
         android:layout_width="257dp"
@@ -21,24 +31,23 @@
         android:id="@+id/leaderboardButton"
         android:layout_width="257dp"
         android:layout_height="40dp"
-        android:layout_marginTop="100dp"
         android:text="Leaderboard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/playButton"
+        app:layout_constraintVertical_bias="0.204" />
 
     <Button
         android:id="@+id/settingButton"
         android:layout_width="257dp"
         android:layout_height="40dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
         android:text="Settings"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.506" />
+        app:layout_constraintTop_toBottomOf="@+id/leaderboardButton" />
 
     <TextView
         android:id="@+id/mainAppName"
@@ -46,6 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="640dp"
         android:text="TypeFaster"
+        android:textColor="#FF5722"
         android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
