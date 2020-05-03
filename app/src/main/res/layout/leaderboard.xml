@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
+<<<<<<< HEAD
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/leaderboardData"
         android:layout_width="413dp"
@@ -13,11 +14,39 @@
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
         android:background="#000000"
+||||||| merged common ancestors
+    <TextView
+        android:id="@+id/leaderboardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="620dp"
+        android:text="Leaderboard"
+        android:textSize="36sp"
+=======
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderboardData"
+        android:layout_width="469dp"
+        android:layout_height="904dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaderboardText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/leaderboardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="620dp"
+        android:text="Leaderboard"
+        android:textSize="36sp"
+>>>>>>> 939934eaf089054c02e3018324618ccaee0b6cb1
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent" />
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="427dp"
@@ -29,4 +58,16 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/leaderboard" />
 
+||||||| merged common ancestors
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderboardData"
+        android:layout_width="469dp"
+        android:layout_height="904dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaderboardText"
+        app:layout_constraintVertical_bias="1.0" />
+
+=======
+>>>>>>> 939934eaf089054c02e3018324618ccaee0b6cb1
 </androidx.constraintlayout.widget.ConstraintLayout>
