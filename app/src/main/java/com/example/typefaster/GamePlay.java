@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class GamePlay {
 
     String[] soal = new String[20];
+    int counter = 0;
     int index = 0;
     long start = 0;
     long end = 0;
@@ -86,13 +87,13 @@ public class GamePlay {
         leaderboardNama.add(nama);
         leaderboardWaktu.add(WPM);
         System.out.println("");
-        menu();
+//        menu();
     }
 
     public void jawabanSalah() {
         System.out.println("Jawaban anda salah!!!");
         System.out.println("");
-        menu();
+//        menu();
     }
 
     public void balikMenu() {
@@ -100,7 +101,7 @@ public class GamePlay {
         Scanner x = new Scanner(System.in);
         String Pilih = x.nextLine();
         if (Pilih.equalsIgnoreCase("Y")) {
-            menu();
+//            menu();
 
         } else {
 
@@ -133,43 +134,43 @@ public class GamePlay {
             System.out.println(leaderboardWaktu.get(i) + " WPM");
             System.out.println("");
         }
-        menu();
+//        menu();
     }
 
-    public void menu() {
+//   public void menu() {
+//
+//        System.out.println("1.Mulai game");
+//        System.out.println("2.Leaderboard");
+//        System.out.println("3.Exit");
+//        System.out.println("Pilih menu : ");
+//        Scanner x = new Scanner(System.in);
+//        int pilih = x.nextInt();
+//        if (pilih == 1) {
+//            masukSoal();
+//            randomSoal();
+//            stopwatchstart();
+//            System.out.println("Soalmu = ");
+//            System.out.println(soal[index]);
+//            System.out.println("Ketik Jawabanmu = ");
+//            Scanner y = new Scanner(System.in);
+//            jawaban = y.nextLine();
+//            System.out.println("");
+//            checkJawaban();
+//
+//
+//        } else if (pilih == 2) {
+//            leaderboard();
+//
+//        } else {
+//
+//        }
+//
+//    }
 
-        System.out.println("1.Mulai game");
-        System.out.println("2.Leaderboard");
-        System.out.println("3.Exit");
-        System.out.println("Pilih menu : ");
-        Scanner x = new Scanner(System.in);
-        int pilih = x.nextInt();
-        if (pilih == 1) {
-            masukSoal();
-            randomSoal();
-            stopwatchstart();
-            System.out.println("Soalmu = ");
-            System.out.println(soal[index]);
-            System.out.println("Ketik Jawabanmu = ");
-            Scanner y = new Scanner(System.in);
-            jawaban = y.nextLine();
-            System.out.println("");
-            checkJawaban();
-
-
-        } else if (pilih == 2) {
-            leaderboard();
-
-        } else {
-
-        }
-
-    }
-
-    public static void main(String[] args) {
-        System.out.println("KECEPATAN MENGETIK");
-        GamePlay p = new GamePlay();
-        p.menu();
-    }
-
-}
+//    public static void main(String[] args) {
+//        System.out.println("KECEPATAN MENGETIK");
+//        GamePlay p = new GamePlay();
+//        p.menu();
+//    }
+//
+//}

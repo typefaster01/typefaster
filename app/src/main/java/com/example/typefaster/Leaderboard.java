@@ -3,12 +3,15 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import com.example.typefaster.GamePlay;
 
 public class Leaderboard {
 
-    int counter = 0;
-    long temp = 0;
+    ArrayList<Long> leaderboardWaktu = new ArrayList<Long>();
+    ArrayList<String> leaderboardNama = new ArrayList<String>();
     String temp1 = "";
+    long temp = 0;
+    int counter = 0;
         for (int i = 0; i < counter; i++) {
         for (int j = i + 1; j < counter; j++) {
             if(leaderboardWaktu.get(j) > leaderboardWaktu.get(i)){
@@ -30,5 +33,4 @@ public class Leaderboard {
         System.out.println(leaderboardWaktu.get(i) + " WPM");
         System.out.println("");
     }
-    menu();
 }
